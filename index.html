@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0f0f1a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Guty Finanzas</title>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <nav class="bottom-nav">
+      <a href="/" class="nav-item active" data-link>
+        <i data-lucide="layout-dashboard"></i>
+        <span>Resumen</span>
+      </a>
+      <a href="/ingresos" class="nav-item" data-link>
+        <i data-lucide="trending-up"></i>
+        <span>Ingresos</span>
+      </a>
+      <a href="/gastos" class="nav-item" data-link>
+        <i data-lucide="trending-down"></i>
+        <span>Gastos</span>
+      </a>
+      <a href="/transporte" class="nav-item" data-link>
+        <i data-lucide="bus"></i>
+        <span>Transporte</span>
+      </a>
+      <a href="/cuentas" class="nav-item" data-link>
+        <i data-lucide="wallet"></i>
+        <span>Cuentas</span>
+      </a>
+    </nav>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
